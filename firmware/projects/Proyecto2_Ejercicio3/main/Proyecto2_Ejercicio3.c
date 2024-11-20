@@ -1,8 +1,9 @@
-/*! @mainpage Blinking
+/*! @mainpage Proyecto 2 Ejercicio 3
  *
  * \section genDesc General Description
  *
- * This example makes LED_1 and LED_2 blink at different rates, using FreeRTOS tasks and timer interrupts.
+ * Esta actividad modifica el punto 2 agregando ahora el puerto serie, enviando
+ * los datos de las mediciones para poder observarlos en un terminal en la PC.
  *
  * @section changelog Changelog
  *
@@ -11,6 +12,14 @@
  * | 25/09/2024 | Document creation		                         |
  *
  * @author REMEDI Juan Cruz (juan.remedi@ingenieria.uner.edu.ar)
+ *
+ * @section hardConn Hardware Connection
+ * |    Peripheral  |   ESP32   	|
+ * |:--------------:|:--------------|
+ * | 	ECHO	 	| 	GPIO 3		|
+ * | 	TRIGGER	 	| 	GPIO 2		|
+ * | 	+5V 	 	| 	+5V     	|
+ * | 	GND 	 	| 	GND 		|
  *
  */
 
@@ -135,7 +144,7 @@ static void Interrumpir_tecla2(void *pvParameter)
 }
 
 /**
- * @brief Esta funcion recibe la notificacion correspondiente y prende el led acorde a la 
+ * @brief Esta funcion recibe la notificacion correspondiente y prende el led acorde a la
  * lectura de distancia del sensor HC-SR04
  * @param pvParameter parametro sin usar
  */

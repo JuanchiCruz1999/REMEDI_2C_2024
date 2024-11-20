@@ -1,8 +1,8 @@
-/*! @mainpage Blinking
+/*! @mainpage Proyecto 2 Ejercicio 1
  *
  * \section genDesc General Description
- *
- * This example makes LED_1, LED_2 and LED_3 blink at different rates, using FreeRTOS tasks.
+ * Este proyecto permite realizar mediciones de distancia de objetos empleando un sensor de ultrasonido,
+ * además de LEDs para complementar la medicion y una pantalla LCD para mostrar la lectura.
  *
  * @section changelog Changelog
  *
@@ -12,7 +12,14 @@
  *
  * @author Juan Cruz REMEDI (juan.remedi@ingenieria.uner.edu.ar)
  *
- */
+ * @section Hardware Connection
+ *
+ * |    Peripheral  |   ESP32   	|
+ * |:--------------:|:--------------|
+ * | 	ECHO	 	| 	GPIO 3		|
+ * | 	TRIGGER	 	| 	GPIO 2		|
+ * | 	+5V 	 	| 	+5V     	|
+ * | 	GND 	 	| 	GND 		|
 
 /*==================[inclusions]=============================================*/
 #include <stdio.h>
@@ -39,18 +46,39 @@
 
 /*==================[internal data definition]===============================*/
 
-/* variables que manejan y coordinan la acción de sus tareas correspondientes*/
+/**
+ * @brief variable de tipo task handle encargada de manejar la tarea "MedirDistancia"
+ */
 TaskHandle_t MedirDistancia_task_handle = NULL;
+
+/**
+ * @brief variable de tipo task handle encargada de manejar la tarea "LeerTeclas"
+ */
 TaskHandle_t LeerTeclas_task_handle = NULL;
+
+/**
+ * @brief variable de tipo task handle encargada de manejar la tarea "MostrarPorPantalla"
+ */
 TaskHandle_t MostrarPorPantalla_task_handle = NULL;
+
+/**
+ * @brief variable de tipo task handle encargada de manejar la tarea "PrenderLEDS"
+ */
 TaskHandle_t PrenderLEDS_task_handle = NULL;
 
-/*variables booleanas que se encargan de:
-ON: medir distancia por sensor de ultrasonido y mostrar por pantalla al accionar la tecla 1
-HOLD: mantener una medicion dada en el display al accionar la tecla 2*/
+/**
+ * @brief Variable booleana que controla cuando medir distancia con el sensor HC_SR04
+ */
 bool ON = false;
+
+/**
+ * @brief Variable booleana que permite mantener una medición de distancia fija en la pantalla
+ */
 bool HOLD = false;
 
+/**
+ * @brief
+ */
 /*variable que almacena un dato de distancia medido*/
 uint16_t distancia = 0;
 
@@ -108,9 +136,9 @@ static void MostrarPorPantalla(void *pvParameter)
         if (ON)
         {
             if (!HOLD)
-            LcdItsE0803Write(distancia);
+                LcdItsE0803Write(distancia);
         }
-        else if (!ON)
+        else
         {
             LcdItsE0803Off();
         }
@@ -126,7 +154,7 @@ static void PrenderLEDS(void *pvParameter)
 {
     while (true)
     {
-        if(ON)
+        if (ON)
         {
             if (distancia < 10)
             {
@@ -151,7 +179,7 @@ static void PrenderLEDS(void *pvParameter)
                 LedOn(LED_3);
             }
         }
-        else if(!ON)
+        else if (!ON)
         {
             LedsOffAll();
         }

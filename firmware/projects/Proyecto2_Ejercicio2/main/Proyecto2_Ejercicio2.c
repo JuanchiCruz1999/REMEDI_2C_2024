@@ -1,9 +1,10 @@
-/*! @mainpage Blinking
+/*! @mainpage Proyecto 2 Ejercicio 2
  *
  * \section genDesc General Description
  *
- * This example makes LED_1 and LED_2 blink at different rates, using FreeRTOS tasks and timer interrupts.
- * 
+ * En este proyecto se modifica la actividad del punto 1
+ * de manera de utilizar interrupciones para el control de las teclas y el control de tiempos (Timers).
+ *
  * @section changelog Changelog
  *
  * |   Date	    | Description                                    |
@@ -12,6 +13,14 @@
  *
  * @author REMEDI Juan Cruz (juan.remedi@ingenieria.uner.edu.ar)
  *
+ * @section hardConn Hardware Connection
+ * |    Peripheral  |   ESP32   	|
+ * |:--------------:|:--------------|
+ * | 	ECHO	 	| 	GPIO 3		|
+ * | 	TRIGGER	 	| 	GPIO 2		|
+ * | 	+5V 	 	| 	+5V     	|
+ * | 	GND 	 	| 	GND 		|
+
  */
 
 /*==================[inclusions]=============================================*/
@@ -31,18 +40,32 @@
 /** @def CONFIG_BLINK_PERIOD_TIMER_B
  * @brief tiempo de accion del timer B
  */
-#define CONFIG_BLINK_PERIOD_TIMER_B 1300*1000
+#define CONFIG_BLINK_PERIOD_TIMER_B 1300 * 1000
 /*==================[internal data definition]===============================*/
 
-/*variables encargadas de manejar y coordinar sus tareas correspondientes*/
+/**
+ * @brief variable de tipo task handle encargada de manejar la tarea "MedirDistancia"
+ */
 TaskHandle_t MedirDistancia_task_handle = NULL;
+
+/**
+ * @brief variable de tipo task handle encargada de manejar la tarea "MostrarPorPantalla"
+ */
 TaskHandle_t MostrarPorPantalla_task_handle = NULL;
+
+/**
+ * @brief variable de tipo task handle encargada de manejar la tarea "PrenderLEDS"
+ */
 TaskHandle_t PrenderLEDS_task_handle = NULL;
 
-/*variables booleanas que se encargan de:
-ON: medir distancia por sensor de ultrasonido y mostrar por pantalla al accionar la tecla 1
-HOLD: mantener una medicion dada en el display al accionar la tecla 2*/
+/**
+ * @brief Variable booleana que controla cuando medir distancia con el sensor HC_SR04
+ */
 bool ON = false;
+
+/**
+ * @brief Variable booleana que permite mantener una medición de distancia fija en la pantalla
+ */
 bool HOLD = false;
 
 /*variable que almacena el dato de distancia medido*/
@@ -61,7 +84,7 @@ static void MedirDistancia(void *pvParameter)
     {
         if (ON)
             distancia = HcSr04ReadDistanceInCentimeters();
-        //vTaskDelay(TIEMPO_DELAY / portTICK_PERIOD_MS);
+        // vTaskDelay(TIEMPO_DELAY / portTICK_PERIOD_MS);
         ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
     }
 }
@@ -77,14 +100,14 @@ static void MostrarPorPantalla(void *pvParameter)
         if (ON)
         {
             if (!HOLD)
-            LcdItsE0803Write(distancia);
+                LcdItsE0803Write(distancia);
         }
         else if (!ON)
         {
             LcdItsE0803Off();
         }
-//        vTaskDelay(TIEMPO_DELAY / portTICK_PERIOD_MS);
-          ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
+        //        vTaskDelay(TIEMPO_DELAY / portTICK_PERIOD_MS);
+        ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
     }
 }
 /**
@@ -93,7 +116,7 @@ static void MostrarPorPantalla(void *pvParameter)
  */
 static void Interrumpir_tecla1(void *pvParameter)
 {
-    ON=!ON;  
+    ON = !ON;
 }
 
 /**
@@ -102,7 +125,7 @@ static void Interrumpir_tecla1(void *pvParameter)
  */
 static void Interrumpir_tecla2(void *pvParameter)
 {
-    HOLD=!HOLD;
+    HOLD = !HOLD;
 }
 
 /**
@@ -114,7 +137,7 @@ static void PrenderLEDS(void *pvParameter)
     while (true)
     {
         ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
-        if(ON)
+        if (ON)
         {
             if (distancia < 10)
             {
@@ -139,12 +162,12 @@ static void PrenderLEDS(void *pvParameter)
                 LedOn(LED_3);
             }
         }
-        else if(!ON)
+        else if (!ON)
         {
             LedsOffAll();
         }
-//        vTaskDelay(TIEMPO_DELAY / portTICK_PERIOD_MS);
-          ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
+        //        vTaskDelay(TIEMPO_DELAY / portTICK_PERIOD_MS);
+        ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
     }
 }
 
@@ -152,10 +175,11 @@ static void PrenderLEDS(void *pvParameter)
  * @brief envia notificaciones a las tareas asociadas con el timer B
  * @param param parametro sin usar
  */
-void FuncTimer_TimerB(void* param){
+void FuncTimer_TimerB(void *param)
+{
     vTaskNotifyGiveFromISR(MostrarPorPantalla_task_handle, pdFALSE);
     vTaskNotifyGiveFromISR(MedirDistancia_task_handle, pdFALSE);
-    vTaskNotifyGiveFromISR(PrenderLEDS_task_handle, pdFALSE);    /* Envía una notificación a la tarea asociada al LED_2 */
+    vTaskNotifyGiveFromISR(PrenderLEDS_task_handle, pdFALSE); /* Envía una notificación a la tarea asociada al LED_2 */
 }
 
 /*==================[external functions definition]==========================*/
@@ -163,7 +187,8 @@ void FuncTimer_TimerB(void* param){
 /**
  * @brief funcion "main" del programa
  */
-void app_main(void){
+void app_main(void)
+{
 
     LedsInit();
     SwitchesInit();
@@ -175,20 +200,19 @@ void app_main(void){
         .timer = TIMER_B,
         .period = CONFIG_BLINK_PERIOD_TIMER_B,
         .func_p = FuncTimer_TimerB,
-        .param_p = NULL
-    };
+        .param_p = NULL};
     TimerInit(&Func_timerB);
 
     /* Activación de interrupciones */
-    SwitchActivInt(SWITCH_1,Interrumpir_tecla1,NULL);
-    SwitchActivInt(SWITCH_2,Interrumpir_tecla2,NULL);
+    SwitchActivInt(SWITCH_1, Interrumpir_tecla1, NULL);
+    SwitchActivInt(SWITCH_2, Interrumpir_tecla2, NULL);
 
     /* Creación de tareas */
     xTaskCreate(&MedirDistancia, "MEDIR", 512, NULL, 5, &MedirDistancia_task_handle);
-//    xTaskCreate(&LeerTeclas, "LEER", 512, NULL, 5, &LeerTeclas_task_handle);
+    //    xTaskCreate(&LeerTeclas, "LEER", 512, NULL, 5, &LeerTeclas_task_handle);
     xTaskCreate(&MostrarPorPantalla, "MOSTRAR", 512, NULL, 5, &MostrarPorPantalla_task_handle);
     xTaskCreate(&PrenderLEDS, "PRENDER", 512, NULL, 5, &PrenderLEDS_task_handle);
     /* Inicialización del conteo de timers */
     TimerStart(Func_timerB.timer);
-//    TimerStart(Func_TimerB.timer);
+    //    TimerStart(Func_TimerB.timer);
 }
