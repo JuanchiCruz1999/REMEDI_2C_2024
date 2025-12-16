@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Documentacion Proyecto 2 Ejercicio4: Archivo de código fuente C:/REPOSITORIO_v2.0/REMEDI_2C_2024/firmware/projects/Examen Final 16 Diciembre Eprog/main/Examen Final 16 Diciembre Eprog.c</title>
+<link rel="icon" href="icon.ico" type="image/x-icon" />
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="fiuner.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Documentacion Proyecto 2 Ejercicio4<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Examen final E PROG 16/12/2025</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Examen Final 16 Diciembre Eprog.c</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">/*==================[inclusions]=============================================*/</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &quot;freertos/FreeRTOS.h&quot;</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &quot;freertos/task.h&quot;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &quot;<a class="code" href="timer__mcu_8h.html">timer_mcu.h</a>&quot;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &quot;<a class="code" href="hc__sr04_8h.html">hc_sr04.h</a>&quot;</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &quot;<a class="code" href="gpio__mcu_8h.html">gpio_mcu.h</a>&quot;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &quot;<a class="code" href="uart__mcu_8h.html">uart_mcu.h</a>&quot;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &quot;<a class="code" href="analog__io__mcu_8h.html">analog_io_mcu.h</a>&quot;</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#include &quot;<a class="code" href="led_8h.html">led.h</a>&quot;</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#include &quot;<a class="code" href="switch_8h.html">switch.h</a>&quot;</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#include &quot;math.h&quot;</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">/*==================[macros and definitions]=================================*/</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a0c26ca2d0c73549b8fe9c987d3606c57">   48</a></span><span class="preprocessor">#define GPIO_ELECTROVALVULA GPIO_8</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a29127a5258d6718fcbda46bc0d76e4ca">   53</a></span><span class="preprocessor">#define GPIO_COMPUERTA_ALIMENTO GPIO_9</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a0fd01ce017b4ee278a9a39e16dd24059">   58</a></span><span class="preprocessor">#define SENIAL_BALANZA CH1</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a210b73e3a6cd0c8ed723473c980a4e7e">   63</a></span><span class="preprocessor">#define PERIODO_TIEMPO_1 5000000 </span><span class="comment">//5 segundos en microsegundos para el timer</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a2704101a9a3cb38aa0afc3370a27cf26">   68</a></span><span class="preprocessor">#define CONFIG_BLINK_PERIOD_TECLAS 200</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">/*==================[internal data definition]===============================*/</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#af7f23a246b705ab0e633d863408c93db">   72</a></span>int32_t <a class="code hl_variable" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#af7f23a246b705ab0e633d863408c93db">volumen_agua_tanque</a> = 0;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#ac110e9a8df3e538b5698c61efc723dcb">   74</a></span>int32_t <a class="code hl_variable" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#ac110e9a8df3e538b5698c61efc723dcb">peso_recipiente_alimento</a> = 0;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">/*guarda el valor de la tecla que se presiona */</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a50987b3d7e97ff3669bca28b29087ee2">   77</a></span>uint8_t <a class="code hl_variable" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a50987b3d7e97ff3669bca28b29087ee2">teclas</a>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#afd9981195bc69eb55ea840b3c45b572c">   79</a></span><span class="keywordtype">bool</span> <a class="code hl_variable" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#afd9981195bc69eb55ea840b3c45b572c">ENCENDIDO</a>= <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a3496a2367ce7fc0d76e9ece82a5d05cc">   84</a></span>TaskHandle_t <a class="code hl_variable" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a3496a2367ce7fc0d76e9ece82a5d05cc">task_handle_agua</a> = <a class="code hl_define" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a843b5ca284b503326d6b53fe1f7385af">   89</a></span>TaskHandle_t <a class="code hl_variable" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a843b5ca284b503326d6b53fe1f7385af">task_handle_alimento</a> = <a class="code hl_define" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#ac70883d3b6b594d557d8fce9736bf2c8">   94</a></span>TaskHandle_t <a class="code hl_variable" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#ac70883d3b6b594d557d8fce9736bf2c8">task_handle_UART</a> = <a class="code hl_define" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">/*==================[internal functions declaration]=========================*/</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="foldopen" id="foldopen00102" data-start="{" data-end="}">
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a6674ad870608548342532333d3c4f8bb">  102</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a6674ad870608548342532333d3c4f8bb">Timer_1_Func</a>(<span class="keywordtype">void</span> *param){</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    vTaskNotifyGiveFromISR(<a class="code hl_variable" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a3496a2367ce7fc0d76e9ece82a5d05cc">task_handle_agua</a>, pdFALSE);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    vTaskNotifyGiveFromISR(<a class="code hl_variable" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a843b5ca284b503326d6b53fe1f7385af">task_handle_alimento</a>, pdFALSE);  </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    vTaskNotifyGiveFromISR(<a class="code hl_variable" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#ac70883d3b6b594d557d8fce9736bf2c8">task_handle_UART</a>, pdFALSE);  </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>}</div>
+</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="foldopen" id="foldopen00112" data-start="{" data-end="}">
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#acacb626aa4c5815e16feb0894ed667ea">  112</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#acacb626aa4c5815e16feb0894ed667ea">medir_nivel_agua_task</a>(<span class="keywordtype">void</span> *pvParameter){</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keywordflow">while</span>(1){</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        ulTaskNotifyTake(pdTRUE, portMAX_DELAY);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <span class="keywordtype">float</span> altura_agua;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        altura_agua=30-<a class="code hl_function" href="group___h_c___s_r04.html#ga73a5aaa2183e55d104d4e0c2c435e251">HcSr04ReadDistanceInCentimeters</a>();<span class="comment">//el sensor está en la parte de arriba del tanque de 30 cm de altura</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        <a class="code hl_variable" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#af7f23a246b705ab0e633d863408c93db">volumen_agua_tanque</a>=3.14*((20/2)^2)*altura_agua;<span class="comment">// V=PI*r^2*h -&gt; d=r/2 y altura h en [cm], volumen en cm^3</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    }</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>}</div>
+</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="foldopen" id="foldopen00126" data-start="{" data-end="}">
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a431d17a0a92bed0f5ab75a31092412fe">  126</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a431d17a0a92bed0f5ab75a31092412fe">manipular_electrovalvula</a>(){</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#af7f23a246b705ab0e633d863408c93db">volumen_agua_tanque</a>&gt;=2500){</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        <a class="code hl_function" href="group___g_i_o_p.html#ga30ed9d97406129b9b6390154a7479d70">GPIOOff</a>(<a class="code hl_define" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a0c26ca2d0c73549b8fe9c987d3606c57">GPIO_ELECTROVALVULA</a>);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    }</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code hl_variable" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#af7f23a246b705ab0e633d863408c93db">volumen_agua_tanque</a>&lt;=500){</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        <a class="code hl_function" href="group___g_i_o_p.html#gaba62250f2b0e73a98b6f35fb6078fdb1">GPIOOn</a>(<a class="code hl_define" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a0c26ca2d0c73549b8fe9c987d3606c57">GPIO_ELECTROVALVULA</a>);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    }</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>}</div>
+</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="foldopen" id="foldopen00139" data-start="{" data-end="}">
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a6dc77afed093197b0427034c9db1f998">  139</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a6dc77afed093197b0427034c9db1f998">medir_y_convertir_a_gramos_Task</a>(<span class="keywordtype">void</span> *param){</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <span class="keywordflow">while</span>(1){</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        ulTaskNotifyTake(pdTRUE, portMAX_DELAY);</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        int32_t Amplitud_senial_analogica;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        <a class="code hl_function" href="group___analog___i_o.html#gab5ae00a35744f407072230979e593fd9">AnalogInputReadSingle</a>(<a class="code hl_define" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a0fd01ce017b4ee278a9a39e16dd24059">SENIAL_BALANZA</a>,&amp;Amplitud_senial_analogica);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        <a class="code hl_variable" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#ac110e9a8df3e538b5698c61efc723dcb">peso_recipiente_alimento</a>=0+((1000-0)/(3.3-0))*(Amplitud_senial_analogica-0);<span class="comment">// aplicando Ec. recta con dos puntos</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    }</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>}</div>
+</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="foldopen" id="foldopen00153" data-start="{" data-end="}">
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a7c467ad7d2794f09d047b02d2c9e0f43">  153</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a7c467ad7d2794f09d047b02d2c9e0f43">accionar_mecanismo_alimento</a>(){</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#ac110e9a8df3e538b5698c61efc723dcb">peso_recipiente_alimento</a>&gt;=1000){</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        <a class="code hl_function" href="group___g_i_o_p.html#ga30ed9d97406129b9b6390154a7479d70">GPIOOff</a>(<a class="code hl_define" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a29127a5258d6718fcbda46bc0d76e4ca">GPIO_COMPUERTA_ALIMENTO</a>);</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    }</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#ac110e9a8df3e538b5698c61efc723dcb">peso_recipiente_alimento</a>&lt;=50){</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <a class="code hl_function" href="group___g_i_o_p.html#gaba62250f2b0e73a98b6f35fb6078fdb1">GPIOOn</a>(<a class="code hl_define" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a29127a5258d6718fcbda46bc0d76e4ca">GPIO_COMPUERTA_ALIMENTO</a>);</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    }</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>}</div>
+</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="foldopen" id="foldopen00166" data-start="{" data-end="}">
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#ac36f6fcdd82ebdd368a30ff84e12b6ba">  166</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#ac36f6fcdd82ebdd368a30ff84e12b6ba">informar_por_UART_Task</a>(<span class="keywordtype">void</span> *param){</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    <span class="keywordflow">while</span>(1){</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        ulTaskNotifyTake(pdTRUE, portMAX_DELAY);</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <a class="code hl_function" href="group___u_a_r_t.html#ga60db217694ea24ad75fcedda3336a3a8">UartSendString</a>(<a class="code hl_enumvalue" href="group___u_a_r_t.html#gga6e1a445bae87c4cfd26710dbd4657b77af81669fbb473eedf3d1789fcf08d9056">UART_PC</a>, <span class="stringliteral">&quot;Agua: &quot;</span> );</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        <a class="code hl_function" href="group___u_a_r_t.html#ga60db217694ea24ad75fcedda3336a3a8">UartSendString</a>(<a class="code hl_enumvalue" href="group___u_a_r_t.html#gga6e1a445bae87c4cfd26710dbd4657b77af81669fbb473eedf3d1789fcf08d9056">UART_PC</a>, (<span class="keywordtype">char</span>*)<a class="code hl_function" href="group___u_a_r_t.html#ga00c7e785d2874c52bab6e4dba88a5e23">UartItoa</a>(<a class="code hl_variable" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#af7f23a246b705ab0e633d863408c93db">volumen_agua_tanque</a>,10));</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        <a class="code hl_function" href="group___u_a_r_t.html#ga60db217694ea24ad75fcedda3336a3a8">UartSendString</a>(<a class="code hl_enumvalue" href="group___u_a_r_t.html#gga6e1a445bae87c4cfd26710dbd4657b77af81669fbb473eedf3d1789fcf08d9056">UART_PC</a>, <span class="stringliteral">&quot; [cm^3] , Alimento: &quot;</span> );</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        <a class="code hl_function" href="group___u_a_r_t.html#ga60db217694ea24ad75fcedda3336a3a8">UartSendString</a>(<a class="code hl_enumvalue" href="group___u_a_r_t.html#gga6e1a445bae87c4cfd26710dbd4657b77af81669fbb473eedf3d1789fcf08d9056">UART_PC</a>, (<span class="keywordtype">char</span>*)<a class="code hl_function" href="group___u_a_r_t.html#ga00c7e785d2874c52bab6e4dba88a5e23">UartItoa</a>(<a class="code hl_variable" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#ac110e9a8df3e538b5698c61efc723dcb">peso_recipiente_alimento</a>,10));</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        <a class="code hl_function" href="group___u_a_r_t.html#ga60db217694ea24ad75fcedda3336a3a8">UartSendString</a>(<a class="code hl_enumvalue" href="group___u_a_r_t.html#gga6e1a445bae87c4cfd26710dbd4657b77af81669fbb473eedf3d1789fcf08d9056">UART_PC</a>, <span class="stringliteral">&quot; [gr]\r\n&quot;</span>);</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    }</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>}</div>
+</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
+<div class="foldopen" id="foldopen00182" data-start="{" data-end="}">
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a27125e774e216c16138ba86b2eab57ab">  182</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a27125e774e216c16138ba86b2eab57ab">EncenderYDetenerPorTecla</a>()</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>{</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    <span class="keywordflow">while</span>(1)</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    {</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        <a class="code hl_variable" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a50987b3d7e97ff3669bca28b29087ee2">teclas</a>  = <a class="code hl_function" href="group___switch.html#gae2e64bab117e3f8ffc08ecae51f5e262">SwitchesRead</a>();</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        <span class="keywordflow">if</span>(<a class="code hl_variable" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a50987b3d7e97ff3669bca28b29087ee2">teclas</a> == <a class="code hl_enumvalue" href="group___switch.html#gga8caa2df6d25fea5a14eb4533df1d5cfaa24caa46485c5fec2211b3ebd8a1eee77">SWITCH_1</a> &amp;&amp; <a class="code hl_variable" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#afd9981195bc69eb55ea840b3c45b572c">ENCENDIDO</a>){</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>            <a class="code hl_variable" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#afd9981195bc69eb55ea840b3c45b572c">ENCENDIDO</a>=!<a class="code hl_variable" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#afd9981195bc69eb55ea840b3c45b572c">ENCENDIDO</a>;<span class="comment">//lo pone en FALSE</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>            <a class="code hl_function" href="group___l_e_d.html#ga4fd07c9f7fab15d0d07389a38f4a39d8">LedOff</a>(<a class="code hl_enumvalue" href="group___l_e_d.html#ggab6831a7d06c0a2bc69f9b024f6445a80a11a9adb9054de1fe01d6a6750075f57b">LED_1</a>);</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>            <a class="code hl_function" href="group___g_i_o_p.html#ga30ed9d97406129b9b6390154a7479d70">GPIOOff</a>(<a class="code hl_define" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a0c26ca2d0c73549b8fe9c987d3606c57">GPIO_ELECTROVALVULA</a>);</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            <a class="code hl_function" href="group___g_i_o_p.html#ga30ed9d97406129b9b6390154a7479d70">GPIOOff</a>(<a class="code hl_define" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a29127a5258d6718fcbda46bc0d76e4ca">GPIO_COMPUERTA_ALIMENTO</a>);</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        }</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code hl_variable" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a50987b3d7e97ff3669bca28b29087ee2">teclas</a> == <a class="code hl_enumvalue" href="group___switch.html#gga8caa2df6d25fea5a14eb4533df1d5cfaa24caa46485c5fec2211b3ebd8a1eee77">SWITCH_1</a> &amp;&amp; !<a class="code hl_variable" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#afd9981195bc69eb55ea840b3c45b572c">ENCENDIDO</a>){</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>            <a class="code hl_variable" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#afd9981195bc69eb55ea840b3c45b572c">ENCENDIDO</a>=<a class="code hl_variable" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#afd9981195bc69eb55ea840b3c45b572c">ENCENDIDO</a>;<span class="comment">//lo pone en TRUE</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>            <a class="code hl_function" href="group___l_e_d.html#ga883021aaef65f080a52b1852172ecbc3">LedOn</a>(<a class="code hl_enumvalue" href="group___l_e_d.html#ggab6831a7d06c0a2bc69f9b024f6445a80a11a9adb9054de1fe01d6a6750075f57b">LED_1</a>);</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>            <a class="code hl_function" href="group___g_i_o_p.html#gaba62250f2b0e73a98b6f35fb6078fdb1">GPIOOn</a>(<a class="code hl_define" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a0c26ca2d0c73549b8fe9c987d3606c57">GPIO_ELECTROVALVULA</a>);</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>            <a class="code hl_function" href="group___g_i_o_p.html#gaba62250f2b0e73a98b6f35fb6078fdb1">GPIOOn</a>(<a class="code hl_define" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a29127a5258d6718fcbda46bc0d76e4ca">GPIO_COMPUERTA_ALIMENTO</a>);</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        }</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        vTaskDelay(<a class="code hl_define" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a2704101a9a3cb38aa0afc3370a27cf26">CONFIG_BLINK_PERIOD_TECLAS</a> / portTICK_PERIOD_MS);</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    }</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>}</div>
+</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment">/*==================[external functions definition]==========================*/</span></div>
+<div class="foldopen" id="foldopen00211" data-start="{" data-end="}">
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno"><a class="line" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a630544a7f0a2cc40d8a7fefab7e2fe70">  211</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a630544a7f0a2cc40d8a7fefab7e2fe70">app_main</a>(<span class="keywordtype">void</span>){</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    <span class="comment">//Inicializo GPIOs</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    <a class="code hl_function" href="group___g_i_o_p.html#ga10240d283f64bd1b09fca664fda27964">GPIOInit</a>(<a class="code hl_define" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a0c26ca2d0c73549b8fe9c987d3606c57">GPIO_ELECTROVALVULA</a>, <a class="code hl_enumvalue" href="group___g_i_o_p.html#gga423620ef7d69894833f70cfc395caaa9aa248e73c1faee9c6f072fd91569cf516">GPIO_OUTPUT</a>);</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    <a class="code hl_function" href="group___g_i_o_p.html#ga10240d283f64bd1b09fca664fda27964">GPIOInit</a>(<a class="code hl_define" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a29127a5258d6718fcbda46bc0d76e4ca">GPIO_COMPUERTA_ALIMENTO</a>, <a class="code hl_enumvalue" href="group___g_i_o_p.html#gga423620ef7d69894833f70cfc395caaa9aa248e73c1faee9c6f072fd91569cf516">GPIO_OUTPUT</a>);</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    <span class="comment">//Inicializo Sensor de ultrasonido</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    <a class="code hl_function" href="group___h_c___s_r04.html#ga9d26cc017fe45c607d08231ebffb46c4">HcSr04Init</a>(<a class="code hl_enumvalue" href="group___g_i_o_p.html#ggaf65604147d0244c9b13cfdc865ad5393a081be372da926e3ca6f612b267854e95">GPIO_20</a>, <a class="code hl_enumvalue" href="group___g_i_o_p.html#ggaf65604147d0244c9b13cfdc865ad5393a32ff7e9a2f00d396ff2b2b62af571d7c">GPIO_21</a>);</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    <span class="comment">// configuracion para entrada analogica</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    <a class="code hl_struct" href="structanalog__input__config__t.html">analog_input_config_t</a> analogInput1 = {</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>        .input = <a class="code hl_enumvalue" href="group___analog___i_o.html#gga4ebdf50515e5d73c58c24fd1491770dca703cf81b7a9530ba8650e0ee2f29d68e">CH1</a>,       <span class="comment">// Se configura para leer del canal 1 del conversor analógico-digital (ADC)</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>        .mode = <a class="code hl_enumvalue" href="group___analog___i_o.html#gga51acd785c14953090a3507d4fa8e5939a3b0a8cf9a7759ea8b7c9494eb7fb3dd4">ADC_SINGLE</a>, <span class="comment">// Se configura para realizar una única lectura analógica</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    };</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    <a class="code hl_function" href="group___analog___i_o.html#ga24ce5556aa4682468220b982f151cdfe">AnalogInputInit</a>(&amp;analogInput1); <span class="comment">// Inicializa</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    <span class="comment">// Para el puerto serie</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    <a class="code hl_struct" href="structserial__config__t.html">serial_config_t</a> my_uart = {</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        .port = <a class="code hl_enumvalue" href="group___u_a_r_t.html#gga6e1a445bae87c4cfd26710dbd4657b77af81669fbb473eedf3d1789fcf08d9056">UART_PC</a>,</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>        .baud_rate = 115200, </div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>        .func_p = <a class="code hl_define" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,      </div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        .param_p = <a class="code hl_define" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>      </div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    };</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    <a class="code hl_function" href="group___u_a_r_t.html#ga440f6a03dfd8b310f5fdf42c3bf20c42">UartInit</a>(&amp;my_uart);</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    <span class="comment">//Para la tecla</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    <a class="code hl_function" href="group___switch.html#ga8eb2865a73bf2d2b9fd6760958a0cc3c">SwitchesInit</a>();</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    <a class="code hl_function" href="group___l_e_d.html#gacba669c3e8f52e45d1bea50c2e63b250">LedsInit</a>();</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    <a class="code hl_function" href="group___switch.html#ga9847b9081e3cb39dd3ec01eaee8323b2">SwitchActivInt</a>(<a class="code hl_enumvalue" href="group___switch.html#gga8caa2df6d25fea5a14eb4533df1d5cfaa24caa46485c5fec2211b3ebd8a1eee77">SWITCH_1</a>, &amp;<a class="code hl_function" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a27125e774e216c16138ba86b2eab57ab">EncenderYDetenerPorTecla</a>, <a class="code hl_define" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    <span class="comment">// configuro timer1 para:</span></div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    <span class="comment">// 1) control de volumen de agua en los tanques</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    <span class="comment">// 2) medir peso de alimento con la balanza</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    <span class="comment">// 3) informar por UART las medidas tomadas en 1) y 2)</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    <span class="comment">// Las tres tareas se hacen cada 5 segundos</span></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    <a class="code hl_struct" href="structtimer__config__t.html">timer_config_t</a> timer_1 = {</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        .timer = <a class="code hl_enumvalue" href="group___timer.html#ggacc4e64394d03a6e790f8e52c674534d9a179b1231f027eba52fa4ef94ec174598">TIMER_A</a>,</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        .period = <a class="code hl_define" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a210b73e3a6cd0c8ed723473c980a4e7e">PERIODO_TIEMPO_1</a>,</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        .func_p = <a class="code hl_function" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a6674ad870608548342532333d3c4f8bb">Timer_1_Func</a>,</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        .param_p = <a class="code hl_define" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    };</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    <a class="code hl_function" href="group___timer.html#gae8617c0d176463a60441464ad26563f6">TimerInit</a>(&amp;timer_1); <span class="comment">// inicializo timer 1</span></div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    <a class="code hl_function" href="group___timer.html#ga0b1779c5b8f91cc83c8bfd127071ea2f">TimerStart</a>(timer_1.<a class="code hl_variable" href="structtimer__config__t.html#ab83043b8038c5e630f6a2a05ea007e49">timer</a>); <span class="comment">// para que comience el timer 1</span></div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    <span class="comment">//creo tareas</span></div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    xTaskCreate(&amp;<a class="code hl_function" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#acacb626aa4c5815e16feb0894ed667ea">medir_nivel_agua_task</a>, <span class="stringliteral">&quot;medir volumen de agua&quot;</span>, 512, <a class="code hl_define" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, 5, &amp;<a class="code hl_variable" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a3496a2367ce7fc0d76e9ece82a5d05cc">task_handle_agua</a>);</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    xTaskCreate(&amp;<a class="code hl_function" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a6dc77afed093197b0427034c9db1f998">medir_y_convertir_a_gramos_Task</a>, <span class="stringliteral">&quot;pesar alimento&quot;</span>, 512, <a class="code hl_define" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, 5, &amp;<a class="code hl_variable" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a843b5ca284b503326d6b53fe1f7385af">task_handle_alimento</a>);</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    xTaskCreate(&amp;<a class="code hl_function" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#ac36f6fcdd82ebdd368a30ff84e12b6ba">informar_por_UART_Task</a>, <span class="stringliteral">&quot;mandar mensaje por UART&quot;</span>, 512, <a class="code hl_define" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, 5, &amp;<a class="code hl_variable" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#ac70883d3b6b594d557d8fce9736bf2c8">task_handle_UART</a>);</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>}</div>
+</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span><span class="comment">/*==================[end of file]============================================*/</span></div>
+<div class="ttc" id="a_examen_01_final_0116_01_diciembre_01_eprog_8c_html_a0c26ca2d0c73549b8fe9c987d3606c57"><div class="ttname"><a href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a0c26ca2d0c73549b8fe9c987d3606c57">GPIO_ELECTROVALVULA</a></div><div class="ttdeci">#define GPIO_ELECTROVALVULA</div><div class="ttdoc">GPIO que enciende/apaga la electrovalvula con una señal en alto/bajo respectivamente.</div><div class="ttdef"><b>Definition</b> <a href="#l00048">Examen Final 16 Diciembre Eprog.c:48</a></div></div>
+<div class="ttc" id="a_examen_01_final_0116_01_diciembre_01_eprog_8c_html_a0fd01ce017b4ee278a9a39e16dd24059"><div class="ttname"><a href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a0fd01ce017b4ee278a9a39e16dd24059">SENIAL_BALANZA</a></div><div class="ttdeci">#define SENIAL_BALANZA</div><div class="ttdoc">Canal a través del cual se leen los valores en voltaje de la señal analógica de la balanza.</div><div class="ttdef"><b>Definition</b> <a href="#l00058">Examen Final 16 Diciembre Eprog.c:58</a></div></div>
+<div class="ttc" id="a_examen_01_final_0116_01_diciembre_01_eprog_8c_html_a210b73e3a6cd0c8ed723473c980a4e7e"><div class="ttname"><a href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a210b73e3a6cd0c8ed723473c980a4e7e">PERIODO_TIEMPO_1</a></div><div class="ttdeci">#define PERIODO_TIEMPO_1</div><div class="ttdoc">Tiempo entre dos distintas lecturas de volumen y peso y dos mensajes distintos por UART.</div><div class="ttdef"><b>Definition</b> <a href="#l00063">Examen Final 16 Diciembre Eprog.c:63</a></div></div>
+<div class="ttc" id="a_examen_01_final_0116_01_diciembre_01_eprog_8c_html_a2704101a9a3cb38aa0afc3370a27cf26"><div class="ttname"><a href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a2704101a9a3cb38aa0afc3370a27cf26">CONFIG_BLINK_PERIOD_TECLAS</a></div><div class="ttdeci">#define CONFIG_BLINK_PERIOD_TECLAS</div><div class="ttdef"><b>Definition</b> <a href="#l00068">Examen Final 16 Diciembre Eprog.c:68</a></div></div>
+<div class="ttc" id="a_examen_01_final_0116_01_diciembre_01_eprog_8c_html_a27125e774e216c16138ba86b2eab57ab"><div class="ttname"><a href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a27125e774e216c16138ba86b2eab57ab">EncenderYDetenerPorTecla</a></div><div class="ttdeci">void EncenderYDetenerPorTecla()</div><div class="ttdoc">Al presionar la tecla 1, se prende/apaga el led y se enciende/detiene el sistema.</div><div class="ttdef"><b>Definition</b> <a href="#l00182">Examen Final 16 Diciembre Eprog.c:182</a></div></div>
+<div class="ttc" id="a_examen_01_final_0116_01_diciembre_01_eprog_8c_html_a29127a5258d6718fcbda46bc0d76e4ca"><div class="ttname"><a href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a29127a5258d6718fcbda46bc0d76e4ca">GPIO_COMPUERTA_ALIMENTO</a></div><div class="ttdeci">#define GPIO_COMPUERTA_ALIMENTO</div><div class="ttdoc">GPIO que abre/cierra la compuerta que deja pasar alimento con una señal en alto/bajo respectivamente.</div><div class="ttdef"><b>Definition</b> <a href="#l00053">Examen Final 16 Diciembre Eprog.c:53</a></div></div>
+<div class="ttc" id="a_examen_01_final_0116_01_diciembre_01_eprog_8c_html_a3496a2367ce7fc0d76e9ece82a5d05cc"><div class="ttname"><a href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a3496a2367ce7fc0d76e9ece82a5d05cc">task_handle_agua</a></div><div class="ttdeci">TaskHandle_t task_handle_agua</div><div class="ttdoc">Variable encargada de manejar la tarea relacionada con medir el volumen de agua.</div><div class="ttdef"><b>Definition</b> <a href="#l00084">Examen Final 16 Diciembre Eprog.c:84</a></div></div>
+<div class="ttc" id="a_examen_01_final_0116_01_diciembre_01_eprog_8c_html_a431d17a0a92bed0f5ab75a31092412fe"><div class="ttname"><a href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a431d17a0a92bed0f5ab75a31092412fe">manipular_electrovalvula</a></div><div class="ttdeci">void manipular_electrovalvula()</div><div class="ttdoc">enciende/apaga la electrovalvula acorde al volumen de agua que hay en el tanque</div><div class="ttdef"><b>Definition</b> <a href="#l00126">Examen Final 16 Diciembre Eprog.c:126</a></div></div>
+<div class="ttc" id="a_examen_01_final_0116_01_diciembre_01_eprog_8c_html_a50987b3d7e97ff3669bca28b29087ee2"><div class="ttname"><a href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a50987b3d7e97ff3669bca28b29087ee2">teclas</a></div><div class="ttdeci">uint8_t teclas</div><div class="ttdef"><b>Definition</b> <a href="#l00077">Examen Final 16 Diciembre Eprog.c:77</a></div></div>
+<div class="ttc" id="a_examen_01_final_0116_01_diciembre_01_eprog_8c_html_a630544a7f0a2cc40d8a7fefab7e2fe70"><div class="ttname"><a href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a630544a7f0a2cc40d8a7fefab7e2fe70">app_main</a></div><div class="ttdeci">void app_main(void)</div><div class="ttdoc">funcion &quot;main&quot; del programa.</div><div class="ttdef"><b>Definition</b> <a href="#l00211">Examen Final 16 Diciembre Eprog.c:211</a></div></div>
+<div class="ttc" id="a_examen_01_final_0116_01_diciembre_01_eprog_8c_html_a6674ad870608548342532333d3c4f8bb"><div class="ttname"><a href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a6674ad870608548342532333d3c4f8bb">Timer_1_Func</a></div><div class="ttdeci">void Timer_1_Func(void *param)</div><div class="ttdef"><b>Definition</b> <a href="#l00102">Examen Final 16 Diciembre Eprog.c:102</a></div></div>
+<div class="ttc" id="a_examen_01_final_0116_01_diciembre_01_eprog_8c_html_a6dc77afed093197b0427034c9db1f998"><div class="ttname"><a href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a6dc77afed093197b0427034c9db1f998">medir_y_convertir_a_gramos_Task</a></div><div class="ttdeci">void medir_y_convertir_a_gramos_Task(void *param)</div><div class="ttdef"><b>Definition</b> <a href="#l00139">Examen Final 16 Diciembre Eprog.c:139</a></div></div>
+<div class="ttc" id="a_examen_01_final_0116_01_diciembre_01_eprog_8c_html_a7c467ad7d2794f09d047b02d2c9e0f43"><div class="ttname"><a href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a7c467ad7d2794f09d047b02d2c9e0f43">accionar_mecanismo_alimento</a></div><div class="ttdeci">void accionar_mecanismo_alimento()</div><div class="ttdoc">Abre o cierra la compuerta que sirve alimento dependiendo del peso del recipiente.</div><div class="ttdef"><b>Definition</b> <a href="#l00153">Examen Final 16 Diciembre Eprog.c:153</a></div></div>
+<div class="ttc" id="a_examen_01_final_0116_01_diciembre_01_eprog_8c_html_a843b5ca284b503326d6b53fe1f7385af"><div class="ttname"><a href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#a843b5ca284b503326d6b53fe1f7385af">task_handle_alimento</a></div><div class="ttdeci">TaskHandle_t task_handle_alimento</div><div class="ttdoc">Variable encargada de manejar la tarea relacionada con medir el peso de alimento.</div><div class="ttdef"><b>Definition</b> <a href="#l00089">Examen Final 16 Diciembre Eprog.c:89</a></div></div>
+<div class="ttc" id="a_examen_01_final_0116_01_diciembre_01_eprog_8c_html_ac110e9a8df3e538b5698c61efc723dcb"><div class="ttname"><a href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#ac110e9a8df3e538b5698c61efc723dcb">peso_recipiente_alimento</a></div><div class="ttdeci">int32_t peso_recipiente_alimento</div><div class="ttdef"><b>Definition</b> <a href="#l00074">Examen Final 16 Diciembre Eprog.c:74</a></div></div>
+<div class="ttc" id="a_examen_01_final_0116_01_diciembre_01_eprog_8c_html_ac36f6fcdd82ebdd368a30ff84e12b6ba"><div class="ttname"><a href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#ac36f6fcdd82ebdd368a30ff84e12b6ba">informar_por_UART_Task</a></div><div class="ttdeci">void informar_por_UART_Task(void *param)</div><div class="ttdef"><b>Definition</b> <a href="#l00166">Examen Final 16 Diciembre Eprog.c:166</a></div></div>
+<div class="ttc" id="a_examen_01_final_0116_01_diciembre_01_eprog_8c_html_ac70883d3b6b594d557d8fce9736bf2c8"><div class="ttname"><a href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#ac70883d3b6b594d557d8fce9736bf2c8">task_handle_UART</a></div><div class="ttdeci">TaskHandle_t task_handle_UART</div><div class="ttdoc">Variable encargada de manejar la tarea relacionada con el display por UART.</div><div class="ttdef"><b>Definition</b> <a href="#l00094">Examen Final 16 Diciembre Eprog.c:94</a></div></div>
+<div class="ttc" id="a_examen_01_final_0116_01_diciembre_01_eprog_8c_html_acacb626aa4c5815e16feb0894ed667ea"><div class="ttname"><a href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#acacb626aa4c5815e16feb0894ed667ea">medir_nivel_agua_task</a></div><div class="ttdeci">void medir_nivel_agua_task(void *pvParameter)</div><div class="ttdef"><b>Definition</b> <a href="#l00112">Examen Final 16 Diciembre Eprog.c:112</a></div></div>
+<div class="ttc" id="a_examen_01_final_0116_01_diciembre_01_eprog_8c_html_af7f23a246b705ab0e633d863408c93db"><div class="ttname"><a href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#af7f23a246b705ab0e633d863408c93db">volumen_agua_tanque</a></div><div class="ttdeci">int32_t volumen_agua_tanque</div><div class="ttdef"><b>Definition</b> <a href="#l00072">Examen Final 16 Diciembre Eprog.c:72</a></div></div>
+<div class="ttc" id="a_examen_01_final_0116_01_diciembre_01_eprog_8c_html_afd9981195bc69eb55ea840b3c45b572c"><div class="ttname"><a href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html#afd9981195bc69eb55ea840b3c45b572c">ENCENDIDO</a></div><div class="ttdeci">bool ENCENDIDO</div><div class="ttdef"><b>Definition</b> <a href="#l00079">Examen Final 16 Diciembre Eprog.c:79</a></div></div>
+<div class="ttc" id="aanalog__io__mcu_8h_html"><div class="ttname"><a href="analog__io__mcu_8h.html">analog_io_mcu.h</a></div></div>
+<div class="ttc" id="agpio__mcu_8h_html"><div class="ttname"><a href="gpio__mcu_8h.html">gpio_mcu.h</a></div></div>
+<div class="ttc" id="agroup___analog___i_o_html_ga24ce5556aa4682468220b982f151cdfe"><div class="ttname"><a href="group___analog___i_o.html#ga24ce5556aa4682468220b982f151cdfe">AnalogInputInit</a></div><div class="ttdeci">void AnalogInputInit(analog_input_config_t *config)</div><div class="ttdoc">Analog input initialization.</div><div class="ttdef"><b>Definition</b> <a href="analog__io__mcu_8c_source.html#l00045">analog_io_mcu.c:45</a></div></div>
+<div class="ttc" id="agroup___analog___i_o_html_gab5ae00a35744f407072230979e593fd9"><div class="ttname"><a href="group___analog___i_o.html#gab5ae00a35744f407072230979e593fd9">AnalogInputReadSingle</a></div><div class="ttdeci">void AnalogInputReadSingle(adc_ch_t channel, uint16_t *value)</div><div class="ttdoc">Read single channel.</div><div class="ttdef"><b>Definition</b> <a href="analog__io__mcu_8c_source.html#l00130">analog_io_mcu.c:130</a></div></div>
+<div class="ttc" id="agroup___analog___i_o_html_gga4ebdf50515e5d73c58c24fd1491770dca703cf81b7a9530ba8650e0ee2f29d68e"><div class="ttname"><a href="group___analog___i_o.html#gga4ebdf50515e5d73c58c24fd1491770dca703cf81b7a9530ba8650e0ee2f29d68e">CH1</a></div><div class="ttdeci">@ CH1</div><div class="ttdef"><b>Definition</b> <a href="analog__io__mcu_8h_source.html#l00032">analog_io_mcu.h:32</a></div></div>
+<div class="ttc" id="agroup___analog___i_o_html_gga51acd785c14953090a3507d4fa8e5939a3b0a8cf9a7759ea8b7c9494eb7fb3dd4"><div class="ttname"><a href="group___analog___i_o.html#gga51acd785c14953090a3507d4fa8e5939a3b0a8cf9a7759ea8b7c9494eb7fb3dd4">ADC_SINGLE</a></div><div class="ttdeci">@ ADC_SINGLE</div><div class="ttdef"><b>Definition</b> <a href="analog__io__mcu_8h_source.html#l00038">analog_io_mcu.h:38</a></div></div>
+<div class="ttc" id="agroup___g_i_o_p_html_ga10240d283f64bd1b09fca664fda27964"><div class="ttname"><a href="group___g_i_o_p.html#ga10240d283f64bd1b09fca664fda27964">GPIOInit</a></div><div class="ttdeci">void GPIOInit(gpio_t pin, io_t io)</div><div class="ttdoc">GPIO initialization.</div><div class="ttdef"><b>Definition</b> <a href="gpio__mcu_8c_source.html#l00067">gpio_mcu.c:67</a></div></div>
+<div class="ttc" id="agroup___g_i_o_p_html_ga30ed9d97406129b9b6390154a7479d70"><div class="ttname"><a href="group___g_i_o_p.html#ga30ed9d97406129b9b6390154a7479d70">GPIOOff</a></div><div class="ttdeci">void GPIOOff(gpio_t pin)</div><div class="ttdoc">Change GPIO state to low.</div><div class="ttdef"><b>Definition</b> <a href="gpio__mcu_8c_source.html#l00086">gpio_mcu.c:86</a></div></div>
+<div class="ttc" id="agroup___g_i_o_p_html_gaba62250f2b0e73a98b6f35fb6078fdb1"><div class="ttname"><a href="group___g_i_o_p.html#gaba62250f2b0e73a98b6f35fb6078fdb1">GPIOOn</a></div><div class="ttdeci">void GPIOOn(gpio_t pin)</div><div class="ttdoc">Change GPIO state to high.</div><div class="ttdef"><b>Definition</b> <a href="gpio__mcu_8c_source.html#l00081">gpio_mcu.c:81</a></div></div>
+<div class="ttc" id="agroup___g_i_o_p_html_gga423620ef7d69894833f70cfc395caaa9aa248e73c1faee9c6f072fd91569cf516"><div class="ttname"><a href="group___g_i_o_p.html#gga423620ef7d69894833f70cfc395caaa9aa248e73c1faee9c6f072fd91569cf516">GPIO_OUTPUT</a></div><div class="ttdeci">@ GPIO_OUTPUT</div><div class="ttdef"><b>Definition</b> <a href="gpio__mcu_8h_source.html#l00045">gpio_mcu.h:44</a></div></div>
+<div class="ttc" id="agroup___g_i_o_p_html_ggaf65604147d0244c9b13cfdc865ad5393a081be372da926e3ca6f612b267854e95"><div class="ttname"><a href="group___g_i_o_p.html#ggaf65604147d0244c9b13cfdc865ad5393a081be372da926e3ca6f612b267854e95">GPIO_20</a></div><div class="ttdeci">@ GPIO_20</div><div class="ttdef"><b>Definition</b> <a href="gpio__mcu_8h_source.html#l00072">gpio_mcu.h:72</a></div></div>
+<div class="ttc" id="agroup___g_i_o_p_html_ggaf65604147d0244c9b13cfdc865ad5393a32ff7e9a2f00d396ff2b2b62af571d7c"><div class="ttname"><a href="group___g_i_o_p.html#ggaf65604147d0244c9b13cfdc865ad5393a32ff7e9a2f00d396ff2b2b62af571d7c">GPIO_21</a></div><div class="ttdeci">@ GPIO_21</div><div class="ttdef"><b>Definition</b> <a href="gpio__mcu_8h_source.html#l00073">gpio_mcu.h:73</a></div></div>
+<div class="ttc" id="agroup___h_c___s_r04_html_ga73a5aaa2183e55d104d4e0c2c435e251"><div class="ttname"><a href="group___h_c___s_r04.html#ga73a5aaa2183e55d104d4e0c2c435e251">HcSr04ReadDistanceInCentimeters</a></div><div class="ttdeci">uint16_t HcSr04ReadDistanceInCentimeters(void)</div><div class="ttdoc">Read distance.</div><div class="ttdef"><b>Definition</b> <a href="hc__sr04_8c_source.html#l00045">hc_sr04.c:45</a></div></div>
+<div class="ttc" id="agroup___h_c___s_r04_html_ga9d26cc017fe45c607d08231ebffb46c4"><div class="ttname"><a href="group___h_c___s_r04.html#ga9d26cc017fe45c607d08231ebffb46c4">HcSr04Init</a></div><div class="ttdeci">bool HcSr04Init(gpio_t echo, gpio_t trigger)</div><div class="ttdoc">Driver for reading distance with HC-SR04 module.</div><div class="ttdef"><b>Definition</b> <a href="hc__sr04_8c_source.html#l00034">hc_sr04.c:34</a></div></div>
+<div class="ttc" id="agroup___l_e_d_html_ga4fd07c9f7fab15d0d07389a38f4a39d8"><div class="ttname"><a href="group___l_e_d.html#ga4fd07c9f7fab15d0d07389a38f4a39d8">LedOff</a></div><div class="ttdeci">uint8_t LedOff(led_t led)</div><div class="ttdoc">Turn off a specific LED.</div><div class="ttdef"><b>Definition</b> <a href="led_8c_source.html#l00065">led.c:65</a></div></div>
+<div class="ttc" id="agroup___l_e_d_html_ga883021aaef65f080a52b1852172ecbc3"><div class="ttname"><a href="group___l_e_d.html#ga883021aaef65f080a52b1852172ecbc3">LedOn</a></div><div class="ttdeci">uint8_t LedOn(led_t led)</div><div class="ttdoc">Turn on a specific LED.</div><div class="ttdef"><b>Definition</b> <a href="led_8c_source.html#l00046">led.c:46</a></div></div>
+<div class="ttc" id="agroup___l_e_d_html_gacba669c3e8f52e45d1bea50c2e63b250"><div class="ttname"><a href="group___l_e_d.html#gacba669c3e8f52e45d1bea50c2e63b250">LedsInit</a></div><div class="ttdeci">uint8_t LedsInit(void)</div><div class="ttdoc">ESP-EDU LEDs initialization.</div><div class="ttdef"><b>Definition</b> <a href="led_8c_source.html#l00031">led.c:31</a></div></div>
+<div class="ttc" id="agroup___l_e_d_html_ggab6831a7d06c0a2bc69f9b024f6445a80a11a9adb9054de1fe01d6a6750075f57b"><div class="ttname"><a href="group___l_e_d.html#ggab6831a7d06c0a2bc69f9b024f6445a80a11a9adb9054de1fe01d6a6750075f57b">LED_1</a></div><div class="ttdeci">@ LED_1</div><div class="ttdef"><b>Definition</b> <a href="led_8h_source.html#l00034">led.h:34</a></div></div>
+<div class="ttc" id="agroup___switch_html_ga8eb2865a73bf2d2b9fd6760958a0cc3c"><div class="ttname"><a href="group___switch.html#ga8eb2865a73bf2d2b9fd6760958a0cc3c">SwitchesInit</a></div><div class="ttdeci">int8_t SwitchesInit(void)</div><div class="ttdoc">ESP-EDU switches initialization.</div><div class="ttdef"><b>Definition</b> <a href="switch_8c_source.html#l00029">switch.c:29</a></div></div>
+<div class="ttc" id="agroup___switch_html_ga9847b9081e3cb39dd3ec01eaee8323b2"><div class="ttname"><a href="group___switch.html#ga9847b9081e3cb39dd3ec01eaee8323b2">SwitchActivInt</a></div><div class="ttdeci">void SwitchActivInt(switch_t tec, void *ptrIntFunc, void *args)</div><div class="ttdoc">Enables the interruption of a particular key and assigns a callback function.</div><div class="ttdef"><b>Definition</b> <a href="switch_8c_source.html#l00047">switch.c:47</a></div></div>
+<div class="ttc" id="agroup___switch_html_gae2e64bab117e3f8ffc08ecae51f5e262"><div class="ttname"><a href="group___switch.html#gae2e64bab117e3f8ffc08ecae51f5e262">SwitchesRead</a></div><div class="ttdeci">int8_t SwitchesRead(void)</div><div class="ttdoc">Read all the switches state.</div><div class="ttdef"><b>Definition</b> <a href="switch_8c_source.html#l00038">switch.c:38</a></div></div>
+<div class="ttc" id="agroup___switch_html_gga8caa2df6d25fea5a14eb4533df1d5cfaa24caa46485c5fec2211b3ebd8a1eee77"><div class="ttname"><a href="group___switch.html#gga8caa2df6d25fea5a14eb4533df1d5cfaa24caa46485c5fec2211b3ebd8a1eee77">SWITCH_1</a></div><div class="ttdeci">@ SWITCH_1</div><div class="ttdef"><b>Definition</b> <a href="switch_8h_source.html#l00032">switch.h:32</a></div></div>
+<div class="ttc" id="agroup___timer_html_ga0b1779c5b8f91cc83c8bfd127071ea2f"><div class="ttname"><a href="group___timer.html#ga0b1779c5b8f91cc83c8bfd127071ea2f">TimerStart</a></div><div class="ttdeci">void TimerStart(timer_mcu_t timer)</div><div class="ttdoc">Start timer count.</div><div class="ttdef"><b>Definition</b> <a href="timer__mcu_8c_source.html#l00116">timer_mcu.c:116</a></div></div>
+<div class="ttc" id="agroup___timer_html_gae8617c0d176463a60441464ad26563f6"><div class="ttname"><a href="group___timer.html#gae8617c0d176463a60441464ad26563f6">TimerInit</a></div><div class="ttdeci">void TimerInit(timer_config_t *timer_ini)</div><div class="ttdoc">Timer initialization.</div><div class="ttdef"><b>Definition</b> <a href="timer__mcu_8c_source.html#l00067">timer_mcu.c:67</a></div></div>
+<div class="ttc" id="agroup___timer_html_ggacc4e64394d03a6e790f8e52c674534d9a179b1231f027eba52fa4ef94ec174598"><div class="ttname"><a href="group___timer.html#ggacc4e64394d03a6e790f8e52c674534d9a179b1231f027eba52fa4ef94ec174598">TIMER_A</a></div><div class="ttdeci">@ TIMER_A</div><div class="ttdef"><b>Definition</b> <a href="timer__mcu_8h_source.html#l00032">timer_mcu.h:32</a></div></div>
+<div class="ttc" id="agroup___u_a_r_t_html_ga00c7e785d2874c52bab6e4dba88a5e23"><div class="ttname"><a href="group___u_a_r_t.html#ga00c7e785d2874c52bab6e4dba88a5e23">UartItoa</a></div><div class="ttdeci">uint8_t * UartItoa(uint32_t val, uint8_t base)</div><div class="ttdoc">Convert a number to a String (char array ended with '\0')</div><div class="ttdef"><b>Definition</b> <a href="uart__mcu_8c_source.html#l00222">uart_mcu.c:222</a></div></div>
+<div class="ttc" id="agroup___u_a_r_t_html_ga440f6a03dfd8b310f5fdf42c3bf20c42"><div class="ttname"><a href="group___u_a_r_t.html#ga440f6a03dfd8b310f5fdf42c3bf20c42">UartInit</a></div><div class="ttdeci">void UartInit(serial_config_t *port_config)</div><div class="ttdoc">Serial port initialization.</div><div class="ttdef"><b>Definition</b> <a href="uart__mcu_8c_source.html#l00107">uart_mcu.c:107</a></div></div>
+<div class="ttc" id="agroup___u_a_r_t_html_ga60db217694ea24ad75fcedda3336a3a8"><div class="ttname"><a href="group___u_a_r_t.html#ga60db217694ea24ad75fcedda3336a3a8">UartSendString</a></div><div class="ttdeci">void UartSendString(uart_mcu_port_t port, const char *msg)</div><div class="ttdoc">Send a String trough serial port.</div><div class="ttdef"><b>Definition</b> <a href="uart__mcu_8c_source.html#l00193">uart_mcu.c:193</a></div></div>
+<div class="ttc" id="agroup___u_a_r_t_html_gga6e1a445bae87c4cfd26710dbd4657b77af81669fbb473eedf3d1789fcf08d9056"><div class="ttname"><a href="group___u_a_r_t.html#gga6e1a445bae87c4cfd26710dbd4657b77af81669fbb473eedf3d1789fcf08d9056">UART_PC</a></div><div class="ttdeci">@ UART_PC</div><div class="ttdef"><b>Definition</b> <a href="uart__mcu_8h_source.html#l00032">uart_mcu.h:32</a></div></div>
+<div class="ttc" id="ahc__sr04_8h_html"><div class="ttname"><a href="hc__sr04_8h.html">hc_sr04.h</a></div></div>
+<div class="ttc" id="aili9341_8c_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> <a href="ili9341_8c_source.html#l00019">ili9341.c:19</a></div></div>
+<div class="ttc" id="aled_8h_html"><div class="ttname"><a href="led_8h.html">led.h</a></div></div>
+<div class="ttc" id="astructanalog__input__config__t_html"><div class="ttname"><a href="structanalog__input__config__t.html">analog_input_config_t</a></div><div class="ttdoc">Analog inputs config structure.</div><div class="ttdef"><b>Definition</b> <a href="analog__io__mcu_8h_source.html#l00048">analog_io_mcu.h:48</a></div></div>
+<div class="ttc" id="astructserial__config__t_html"><div class="ttname"><a href="structserial__config__t.html">serial_config_t</a></div><div class="ttdoc">Serial port configuration struct.</div><div class="ttdef"><b>Definition</b> <a href="uart__mcu_8h_source.html#l00038">uart_mcu.h:38</a></div></div>
+<div class="ttc" id="astructtimer__config__t_html"><div class="ttname"><a href="structtimer__config__t.html">timer_config_t</a></div><div class="ttdoc">Timer configuration struct.</div><div class="ttdef"><b>Definition</b> <a href="timer__mcu_8h_source.html#l00039">timer_mcu.h:39</a></div></div>
+<div class="ttc" id="astructtimer__config__t_html_ab83043b8038c5e630f6a2a05ea007e49"><div class="ttname"><a href="structtimer__config__t.html#ab83043b8038c5e630f6a2a05ea007e49">timer_config_t::timer</a></div><div class="ttdeci">timer_mcu_t timer</div><div class="ttdef"><b>Definition</b> <a href="timer__mcu_8h_source.html#l00040">timer_mcu.h:40</a></div></div>
+<div class="ttc" id="aswitch_8h_html"><div class="ttname"><a href="switch_8h.html">switch.h</a></div></div>
+<div class="ttc" id="atimer__mcu_8h_html"><div class="ttname"><a href="timer__mcu_8h.html">timer_mcu.h</a></div></div>
+<div class="ttc" id="auart__mcu_8h_html"><div class="ttname"><a href="uart__mcu_8h.html">uart_mcu.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d9edf6c004b4a7ff14fe9ae7a92214ee.html">firmware</a></li><li class="navelem"><a class="el" href="dir_429d80758da54da73083af4edd40d0b3.html">projects</a></li><li class="navelem"><a class="el" href="dir_7d87fb58a00c3a150b113c75925f3259.html">Examen Final 16 Diciembre Eprog</a></li><li class="navelem"><a class="el" href="dir_648bd62f9d1787181f1083d35691d28f.html">main</a></li><li class="navelem"><a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html">Examen Final 16 Diciembre Eprog.c</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

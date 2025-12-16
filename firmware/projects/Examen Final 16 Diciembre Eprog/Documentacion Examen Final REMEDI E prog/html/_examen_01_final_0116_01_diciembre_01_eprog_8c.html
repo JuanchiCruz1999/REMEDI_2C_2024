@@ -1,0 +1,624 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Documentacion Proyecto 2 Ejercicio4: Referencia del archivo C:/REPOSITORIO_v2.0/REMEDI_2C_2024/firmware/projects/Examen Final 16 Diciembre Eprog/main/Examen Final 16 Diciembre Eprog.c</title>
+<link rel="icon" href="icon.ico" type="image/x-icon" />
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="fiuner.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Documentacion Proyecto 2 Ejercicio4<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Examen final E PROG 16/12/2025</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_examen_01_final_0116_01_diciembre_01_eprog_8c.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">defines</a> &#124;
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del archivo Examen Final 16 Diciembre Eprog.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &quot;freertos/FreeRTOS.h&quot;</code><br />
+<code>#include &quot;freertos/task.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="timer__mcu_8h_source.html">timer_mcu.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="hc__sr04_8h_source.html">hc_sr04.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gpio__mcu_8h_source.html">gpio_mcu.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="uart__mcu_8h_source.html">uart_mcu.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="analog__io__mcu_8h_source.html">analog_io_mcu.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="led_8h_source.html">led.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="switch_8h_source.html">switch.h</a>&quot;</code><br />
+<code>#include &quot;math.h&quot;</code><br />
+</div>
+<p><a href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:a0c26ca2d0c73549b8fe9c987d3606c57" id="r_a0c26ca2d0c73549b8fe9c987d3606c57"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c26ca2d0c73549b8fe9c987d3606c57">GPIO_ELECTROVALVULA</a>&#160;&#160;&#160;<a class="el" href="group___g_i_o_p.html#ggaf65604147d0244c9b13cfdc865ad5393a1633eaf3914293921cf5e102f5026106">GPIO_8</a></td></tr>
+<tr class="memdesc:a0c26ca2d0c73549b8fe9c987d3606c57"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIO que enciende/apaga la electrovalvula con una señal en alto/bajo respectivamente.  <br /></td></tr>
+<tr class="separator:a0c26ca2d0c73549b8fe9c987d3606c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29127a5258d6718fcbda46bc0d76e4ca" id="r_a29127a5258d6718fcbda46bc0d76e4ca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29127a5258d6718fcbda46bc0d76e4ca">GPIO_COMPUERTA_ALIMENTO</a>&#160;&#160;&#160;<a class="el" href="group___g_i_o_p.html#ggaf65604147d0244c9b13cfdc865ad5393a8bdaec9182fb8ab2106d5c67f3eabd2d">GPIO_9</a></td></tr>
+<tr class="memdesc:a29127a5258d6718fcbda46bc0d76e4ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIO que abre/cierra la compuerta que deja pasar alimento con una señal en alto/bajo respectivamente.  <br /></td></tr>
+<tr class="separator:a29127a5258d6718fcbda46bc0d76e4ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fd01ce017b4ee278a9a39e16dd24059" id="r_a0fd01ce017b4ee278a9a39e16dd24059"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fd01ce017b4ee278a9a39e16dd24059">SENIAL_BALANZA</a>&#160;&#160;&#160;<a class="el" href="group___analog___i_o.html#gga4ebdf50515e5d73c58c24fd1491770dca703cf81b7a9530ba8650e0ee2f29d68e">CH1</a></td></tr>
+<tr class="memdesc:a0fd01ce017b4ee278a9a39e16dd24059"><td class="mdescLeft">&#160;</td><td class="mdescRight">Canal a través del cual se leen los valores en voltaje de la señal analógica de la balanza.  <br /></td></tr>
+<tr class="separator:a0fd01ce017b4ee278a9a39e16dd24059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a210b73e3a6cd0c8ed723473c980a4e7e" id="r_a210b73e3a6cd0c8ed723473c980a4e7e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a210b73e3a6cd0c8ed723473c980a4e7e">PERIODO_TIEMPO_1</a>&#160;&#160;&#160;5000000</td></tr>
+<tr class="memdesc:a210b73e3a6cd0c8ed723473c980a4e7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tiempo entre dos distintas lecturas de volumen y peso y dos mensajes distintos por UART.  <br /></td></tr>
+<tr class="separator:a210b73e3a6cd0c8ed723473c980a4e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2704101a9a3cb38aa0afc3370a27cf26" id="r_a2704101a9a3cb38aa0afc3370a27cf26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2704101a9a3cb38aa0afc3370a27cf26">CONFIG_BLINK_PERIOD_TECLAS</a>&#160;&#160;&#160;200</td></tr>
+<tr class="separator:a2704101a9a3cb38aa0afc3370a27cf26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a6674ad870608548342532333d3c4f8bb" id="r_a6674ad870608548342532333d3c4f8bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6674ad870608548342532333d3c4f8bb">Timer_1_Func</a> (void *param)</td></tr>
+<tr class="separator:a6674ad870608548342532333d3c4f8bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acacb626aa4c5815e16feb0894ed667ea" id="r_acacb626aa4c5815e16feb0894ed667ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acacb626aa4c5815e16feb0894ed667ea">medir_nivel_agua_task</a> (void *pvParameter)</td></tr>
+<tr class="separator:acacb626aa4c5815e16feb0894ed667ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a431d17a0a92bed0f5ab75a31092412fe" id="r_a431d17a0a92bed0f5ab75a31092412fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a431d17a0a92bed0f5ab75a31092412fe">manipular_electrovalvula</a> ()</td></tr>
+<tr class="memdesc:a431d17a0a92bed0f5ab75a31092412fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">enciende/apaga la electrovalvula acorde al volumen de agua que hay en el tanque  <br /></td></tr>
+<tr class="separator:a431d17a0a92bed0f5ab75a31092412fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dc77afed093197b0427034c9db1f998" id="r_a6dc77afed093197b0427034c9db1f998"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6dc77afed093197b0427034c9db1f998">medir_y_convertir_a_gramos_Task</a> (void *param)</td></tr>
+<tr class="separator:a6dc77afed093197b0427034c9db1f998"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c467ad7d2794f09d047b02d2c9e0f43" id="r_a7c467ad7d2794f09d047b02d2c9e0f43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c467ad7d2794f09d047b02d2c9e0f43">accionar_mecanismo_alimento</a> ()</td></tr>
+<tr class="memdesc:a7c467ad7d2794f09d047b02d2c9e0f43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abre o cierra la compuerta que sirve alimento dependiendo del peso del recipiente.  <br /></td></tr>
+<tr class="separator:a7c467ad7d2794f09d047b02d2c9e0f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac36f6fcdd82ebdd368a30ff84e12b6ba" id="r_ac36f6fcdd82ebdd368a30ff84e12b6ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac36f6fcdd82ebdd368a30ff84e12b6ba">informar_por_UART_Task</a> (void *param)</td></tr>
+<tr class="separator:ac36f6fcdd82ebdd368a30ff84e12b6ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27125e774e216c16138ba86b2eab57ab" id="r_a27125e774e216c16138ba86b2eab57ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27125e774e216c16138ba86b2eab57ab">EncenderYDetenerPorTecla</a> ()</td></tr>
+<tr class="memdesc:a27125e774e216c16138ba86b2eab57ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Al presionar la tecla 1, se prende/apaga el led y se enciende/detiene el sistema.  <br /></td></tr>
+<tr class="separator:a27125e774e216c16138ba86b2eab57ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630544a7f0a2cc40d8a7fefab7e2fe70" id="r_a630544a7f0a2cc40d8a7fefab7e2fe70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a630544a7f0a2cc40d8a7fefab7e2fe70">app_main</a> (void)</td></tr>
+<tr class="memdesc:a630544a7f0a2cc40d8a7fefab7e2fe70"><td class="mdescLeft">&#160;</td><td class="mdescRight">funcion "main" del programa.  <br /></td></tr>
+<tr class="separator:a630544a7f0a2cc40d8a7fefab7e2fe70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:af7f23a246b705ab0e633d863408c93db" id="r_af7f23a246b705ab0e633d863408c93db"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7f23a246b705ab0e633d863408c93db">volumen_agua_tanque</a> = 0</td></tr>
+<tr class="separator:af7f23a246b705ab0e633d863408c93db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac110e9a8df3e538b5698c61efc723dcb" id="r_ac110e9a8df3e538b5698c61efc723dcb"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac110e9a8df3e538b5698c61efc723dcb">peso_recipiente_alimento</a> = 0</td></tr>
+<tr class="separator:ac110e9a8df3e538b5698c61efc723dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50987b3d7e97ff3669bca28b29087ee2" id="r_a50987b3d7e97ff3669bca28b29087ee2"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50987b3d7e97ff3669bca28b29087ee2">teclas</a></td></tr>
+<tr class="separator:a50987b3d7e97ff3669bca28b29087ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd9981195bc69eb55ea840b3c45b572c" id="r_afd9981195bc69eb55ea840b3c45b572c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd9981195bc69eb55ea840b3c45b572c">ENCENDIDO</a> = false</td></tr>
+<tr class="separator:afd9981195bc69eb55ea840b3c45b572c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3496a2367ce7fc0d76e9ece82a5d05cc" id="r_a3496a2367ce7fc0d76e9ece82a5d05cc"><td class="memItemLeft" align="right" valign="top">TaskHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3496a2367ce7fc0d76e9ece82a5d05cc">task_handle_agua</a> = <a class="el" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td></tr>
+<tr class="memdesc:a3496a2367ce7fc0d76e9ece82a5d05cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable encargada de manejar la tarea relacionada con medir el volumen de agua.  <br /></td></tr>
+<tr class="separator:a3496a2367ce7fc0d76e9ece82a5d05cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a843b5ca284b503326d6b53fe1f7385af" id="r_a843b5ca284b503326d6b53fe1f7385af"><td class="memItemLeft" align="right" valign="top">TaskHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a843b5ca284b503326d6b53fe1f7385af">task_handle_alimento</a> = <a class="el" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td></tr>
+<tr class="memdesc:a843b5ca284b503326d6b53fe1f7385af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable encargada de manejar la tarea relacionada con medir el peso de alimento.  <br /></td></tr>
+<tr class="separator:a843b5ca284b503326d6b53fe1f7385af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac70883d3b6b594d557d8fce9736bf2c8" id="r_ac70883d3b6b594d557d8fce9736bf2c8"><td class="memItemLeft" align="right" valign="top">TaskHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac70883d3b6b594d557d8fce9736bf2c8">task_handle_UART</a> = <a class="el" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td></tr>
+<tr class="memdesc:ac70883d3b6b594d557d8fce9736bf2c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable encargada de manejar la tarea relacionada con el display por UART.  <br /></td></tr>
+<tr class="separator:ac70883d3b6b594d557d8fce9736bf2c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de «define»</h2>
+<a id="a2704101a9a3cb38aa0afc3370a27cf26" name="a2704101a9a3cb38aa0afc3370a27cf26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2704101a9a3cb38aa0afc3370a27cf26">&#9670;&#160;</a></span>CONFIG_BLINK_PERIOD_TECLAS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CONFIG_BLINK_PERIOD_TECLAS&#160;&#160;&#160;200</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00068">68</a> del archivo <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html">Examen Final 16 Diciembre Eprog.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00182">EncenderYDetenerPorTecla()</a>.</p>
+
+</div>
+</div>
+<a id="a29127a5258d6718fcbda46bc0d76e4ca" name="a29127a5258d6718fcbda46bc0d76e4ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29127a5258d6718fcbda46bc0d76e4ca">&#9670;&#160;</a></span>GPIO_COMPUERTA_ALIMENTO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GPIO_COMPUERTA_ALIMENTO&#160;&#160;&#160;<a class="el" href="group___g_i_o_p.html#ggaf65604147d0244c9b13cfdc865ad5393a8bdaec9182fb8ab2106d5c67f3eabd2d">GPIO_9</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GPIO que abre/cierra la compuerta que deja pasar alimento con una señal en alto/bajo respectivamente. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00053">53</a> del archivo <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html">Examen Final 16 Diciembre Eprog.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00153">accionar_mecanismo_alimento()</a>, <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00211">app_main()</a> y <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00182">EncenderYDetenerPorTecla()</a>.</p>
+
+</div>
+</div>
+<a id="a0c26ca2d0c73549b8fe9c987d3606c57" name="a0c26ca2d0c73549b8fe9c987d3606c57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c26ca2d0c73549b8fe9c987d3606c57">&#9670;&#160;</a></span>GPIO_ELECTROVALVULA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GPIO_ELECTROVALVULA&#160;&#160;&#160;<a class="el" href="group___g_i_o_p.html#ggaf65604147d0244c9b13cfdc865ad5393a1633eaf3914293921cf5e102f5026106">GPIO_8</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GPIO que enciende/apaga la electrovalvula con una señal en alto/bajo respectivamente. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00048">48</a> del archivo <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html">Examen Final 16 Diciembre Eprog.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00211">app_main()</a>, <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00182">EncenderYDetenerPorTecla()</a> y <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00126">manipular_electrovalvula()</a>.</p>
+
+</div>
+</div>
+<a id="a210b73e3a6cd0c8ed723473c980a4e7e" name="a210b73e3a6cd0c8ed723473c980a4e7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a210b73e3a6cd0c8ed723473c980a4e7e">&#9670;&#160;</a></span>PERIODO_TIEMPO_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PERIODO_TIEMPO_1&#160;&#160;&#160;5000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tiempo entre dos distintas lecturas de volumen y peso y dos mensajes distintos por UART. </p>
+<p>Periodo al que quiero que lea lo que le mando por las teclas. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00063">63</a> del archivo <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html">Examen Final 16 Diciembre Eprog.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00211">app_main()</a>.</p>
+
+</div>
+</div>
+<a id="a0fd01ce017b4ee278a9a39e16dd24059" name="a0fd01ce017b4ee278a9a39e16dd24059"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fd01ce017b4ee278a9a39e16dd24059">&#9670;&#160;</a></span>SENIAL_BALANZA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SENIAL_BALANZA&#160;&#160;&#160;<a class="el" href="group___analog___i_o.html#gga4ebdf50515e5d73c58c24fd1491770dca703cf81b7a9530ba8650e0ee2f29d68e">CH1</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Canal a través del cual se leen los valores en voltaje de la señal analógica de la balanza. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00058">58</a> del archivo <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html">Examen Final 16 Diciembre Eprog.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00139">medir_y_convertir_a_gramos_Task()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de funciones</h2>
+<a id="a7c467ad7d2794f09d047b02d2c9e0f43" name="a7c467ad7d2794f09d047b02d2c9e0f43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c467ad7d2794f09d047b02d2c9e0f43">&#9670;&#160;</a></span>accionar_mecanismo_alimento()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void accionar_mecanismo_alimento </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Abre o cierra la compuerta que sirve alimento dependiendo del peso del recipiente. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00153">153</a> del archivo <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html">Examen Final 16 Diciembre Eprog.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00053">GPIO_COMPUERTA_ALIMENTO</a>, <a class="el" href="gpio__mcu_8c_source.html#l00086">GPIOOff()</a>, <a class="el" href="gpio__mcu_8c_source.html#l00081">GPIOOn()</a> y <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00074">peso_recipiente_alimento</a>.</p>
+
+</div>
+</div>
+<a id="a630544a7f0a2cc40d8a7fefab7e2fe70" name="a630544a7f0a2cc40d8a7fefab7e2fe70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a630544a7f0a2cc40d8a7fefab7e2fe70">&#9670;&#160;</a></span>app_main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void app_main </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>funcion "main" del programa. </p>
+<p>&lt; baudrate (bits per second)</p>
+<p>&lt; Pointer to callback function to call when receiving data (= UART_NO_INT if not requiered)</p>
+<p>&lt; Pointer to callback function parameters</p>
+
+<p class="definition">Definición en la línea <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00211">211</a> del archivo <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html">Examen Final 16 Diciembre Eprog.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="analog__io__mcu_8h_source.html#l00038">ADC_SINGLE</a>, <a class="el" href="analog__io__mcu_8c_source.html#l00045">AnalogInputInit()</a>, <a class="el" href="analog__io__mcu_8h_source.html#l00032">CH1</a>, <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00182">EncenderYDetenerPorTecla()</a>, <a class="el" href="gpio__mcu_8h_source.html#l00072">GPIO_20</a>, <a class="el" href="gpio__mcu_8h_source.html#l00073">GPIO_21</a>, <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00053">GPIO_COMPUERTA_ALIMENTO</a>, <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00048">GPIO_ELECTROVALVULA</a>, <a class="el" href="gpio__mcu_8h_source.html#l00044">GPIO_OUTPUT</a>, <a class="el" href="gpio__mcu_8c_source.html#l00067">GPIOInit()</a>, <a class="el" href="hc__sr04_8c_source.html#l00034">HcSr04Init()</a>, <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00166">informar_por_UART_Task()</a>, <a class="el" href="led_8c_source.html#l00031">LedsInit()</a>, <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00112">medir_nivel_agua_task()</a>, <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00139">medir_y_convertir_a_gramos_Task()</a>, <a class="el" href="ili9341_8c_source.html#l00019">NULL</a>, <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00063">PERIODO_TIEMPO_1</a>, <a class="el" href="switch_8h_source.html#l00032">SWITCH_1</a>, <a class="el" href="switch_8c_source.html#l00047">SwitchActivInt()</a>, <a class="el" href="switch_8c_source.html#l00029">SwitchesInit()</a>, <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00084">task_handle_agua</a>, <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00089">task_handle_alimento</a>, <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00094">task_handle_UART</a>, <a class="el" href="timer__mcu_8h_source.html#l00040">timer_config_t::timer</a>, <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00102">Timer_1_Func()</a>, <a class="el" href="timer__mcu_8h_source.html#l00032">TIMER_A</a>, <a class="el" href="timer__mcu_8c_source.html#l00067">TimerInit()</a>, <a class="el" href="timer__mcu_8c_source.html#l00116">TimerStart()</a>, <a class="el" href="uart__mcu_8h_source.html#l00032">UART_PC</a> y <a class="el" href="uart__mcu_8c_source.html#l00107">UartInit()</a>.</p>
+
+</div>
+</div>
+<a id="a27125e774e216c16138ba86b2eab57ab" name="a27125e774e216c16138ba86b2eab57ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27125e774e216c16138ba86b2eab57ab">&#9670;&#160;</a></span>EncenderYDetenerPorTecla()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EncenderYDetenerPorTecla </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Al presionar la tecla 1, se prende/apaga el led y se enciende/detiene el sistema. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00182">182</a> del archivo <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html">Examen Final 16 Diciembre Eprog.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00068">CONFIG_BLINK_PERIOD_TECLAS</a>, <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00079">ENCENDIDO</a>, <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00053">GPIO_COMPUERTA_ALIMENTO</a>, <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00048">GPIO_ELECTROVALVULA</a>, <a class="el" href="gpio__mcu_8c_source.html#l00086">GPIOOff()</a>, <a class="el" href="gpio__mcu_8c_source.html#l00081">GPIOOn()</a>, <a class="el" href="led_8h_source.html#l00034">LED_1</a>, <a class="el" href="led_8c_source.html#l00065">LedOff()</a>, <a class="el" href="led_8c_source.html#l00046">LedOn()</a>, <a class="el" href="switch_8h_source.html#l00032">SWITCH_1</a>, <a class="el" href="switch_8c_source.html#l00038">SwitchesRead()</a> y <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00077">teclas</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00211">app_main()</a>.</p>
+
+</div>
+</div>
+<a id="ac36f6fcdd82ebdd368a30ff84e12b6ba" name="ac36f6fcdd82ebdd368a30ff84e12b6ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac36f6fcdd82ebdd368a30ff84e12b6ba">&#9670;&#160;</a></span>informar_por_UART_Task()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void informar_por_UART_Task </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>param</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00166">166</a> del archivo <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html">Examen Final 16 Diciembre Eprog.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00074">peso_recipiente_alimento</a>, <a class="el" href="uart__mcu_8h_source.html#l00032">UART_PC</a>, <a class="el" href="uart__mcu_8c_source.html#l00222">UartItoa()</a>, <a class="el" href="uart__mcu_8c_source.html#l00193">UartSendString()</a> y <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00072">volumen_agua_tanque</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00211">app_main()</a>.</p>
+
+</div>
+</div>
+<a id="a431d17a0a92bed0f5ab75a31092412fe" name="a431d17a0a92bed0f5ab75a31092412fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a431d17a0a92bed0f5ab75a31092412fe">&#9670;&#160;</a></span>manipular_electrovalvula()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void manipular_electrovalvula </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>enciende/apaga la electrovalvula acorde al volumen de agua que hay en el tanque </p>
+
+<p class="definition">Definición en la línea <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00126">126</a> del archivo <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html">Examen Final 16 Diciembre Eprog.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00048">GPIO_ELECTROVALVULA</a>, <a class="el" href="gpio__mcu_8c_source.html#l00086">GPIOOff()</a>, <a class="el" href="gpio__mcu_8c_source.html#l00081">GPIOOn()</a> y <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00072">volumen_agua_tanque</a>.</p>
+
+</div>
+</div>
+<a id="acacb626aa4c5815e16feb0894ed667ea" name="acacb626aa4c5815e16feb0894ed667ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acacb626aa4c5815e16feb0894ed667ea">&#9670;&#160;</a></span>medir_nivel_agua_task()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void medir_nivel_agua_task </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>pvParameter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00112">112</a> del archivo <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html">Examen Final 16 Diciembre Eprog.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="hc__sr04_8c_source.html#l00045">HcSr04ReadDistanceInCentimeters()</a> y <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00072">volumen_agua_tanque</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00211">app_main()</a>.</p>
+
+</div>
+</div>
+<a id="a6dc77afed093197b0427034c9db1f998" name="a6dc77afed093197b0427034c9db1f998"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dc77afed093197b0427034c9db1f998">&#9670;&#160;</a></span>medir_y_convertir_a_gramos_Task()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void medir_y_convertir_a_gramos_Task </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>param</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00139">139</a> del archivo <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html">Examen Final 16 Diciembre Eprog.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="analog__io__mcu_8c_source.html#l00130">AnalogInputReadSingle()</a>, <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00074">peso_recipiente_alimento</a> y <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00058">SENIAL_BALANZA</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00211">app_main()</a>.</p>
+
+</div>
+</div>
+<a id="a6674ad870608548342532333d3c4f8bb" name="a6674ad870608548342532333d3c4f8bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6674ad870608548342532333d3c4f8bb">&#9670;&#160;</a></span>Timer_1_Func()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Timer_1_Func </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>param</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00102">102</a> del archivo <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html">Examen Final 16 Diciembre Eprog.c</a>.</p>
+
+<p class="reference">Hace referencia a <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00084">task_handle_agua</a>, <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00089">task_handle_alimento</a> y <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00094">task_handle_UART</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00211">app_main()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de variables</h2>
+<a id="afd9981195bc69eb55ea840b3c45b572c" name="afd9981195bc69eb55ea840b3c45b572c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd9981195bc69eb55ea840b3c45b572c">&#9670;&#160;</a></span>ENCENDIDO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ENCENDIDO = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00079">79</a> del archivo <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html">Examen Final 16 Diciembre Eprog.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00182">EncenderYDetenerPorTecla()</a>.</p>
+
+</div>
+</div>
+<a id="ac110e9a8df3e538b5698c61efc723dcb" name="ac110e9a8df3e538b5698c61efc723dcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac110e9a8df3e538b5698c61efc723dcb">&#9670;&#160;</a></span>peso_recipiente_alimento</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t peso_recipiente_alimento = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00074">74</a> del archivo <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html">Examen Final 16 Diciembre Eprog.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00153">accionar_mecanismo_alimento()</a>, <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00166">informar_por_UART_Task()</a> y <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00139">medir_y_convertir_a_gramos_Task()</a>.</p>
+
+</div>
+</div>
+<a id="a3496a2367ce7fc0d76e9ece82a5d05cc" name="a3496a2367ce7fc0d76e9ece82a5d05cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3496a2367ce7fc0d76e9ece82a5d05cc">&#9670;&#160;</a></span>task_handle_agua</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TaskHandle_t task_handle_agua = <a class="el" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variable encargada de manejar la tarea relacionada con medir el volumen de agua. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00084">84</a> del archivo <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html">Examen Final 16 Diciembre Eprog.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00211">app_main()</a> y <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00102">Timer_1_Func()</a>.</p>
+
+</div>
+</div>
+<a id="a843b5ca284b503326d6b53fe1f7385af" name="a843b5ca284b503326d6b53fe1f7385af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a843b5ca284b503326d6b53fe1f7385af">&#9670;&#160;</a></span>task_handle_alimento</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TaskHandle_t task_handle_alimento = <a class="el" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variable encargada de manejar la tarea relacionada con medir el peso de alimento. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00089">89</a> del archivo <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html">Examen Final 16 Diciembre Eprog.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00211">app_main()</a> y <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00102">Timer_1_Func()</a>.</p>
+
+</div>
+</div>
+<a id="ac70883d3b6b594d557d8fce9736bf2c8" name="ac70883d3b6b594d557d8fce9736bf2c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac70883d3b6b594d557d8fce9736bf2c8">&#9670;&#160;</a></span>task_handle_UART</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TaskHandle_t task_handle_UART = <a class="el" href="ili9341_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variable encargada de manejar la tarea relacionada con el display por UART. </p>
+
+<p class="definition">Definición en la línea <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00094">94</a> del archivo <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html">Examen Final 16 Diciembre Eprog.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00211">app_main()</a> y <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00102">Timer_1_Func()</a>.</p>
+
+</div>
+</div>
+<a id="a50987b3d7e97ff3669bca28b29087ee2" name="a50987b3d7e97ff3669bca28b29087ee2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50987b3d7e97ff3669bca28b29087ee2">&#9670;&#160;</a></span>teclas</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t teclas</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00077">77</a> del archivo <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html">Examen Final 16 Diciembre Eprog.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00182">EncenderYDetenerPorTecla()</a>.</p>
+
+</div>
+</div>
+<a id="af7f23a246b705ab0e633d863408c93db" name="af7f23a246b705ab0e633d863408c93db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7f23a246b705ab0e633d863408c93db">&#9670;&#160;</a></span>volumen_agua_tanque</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t volumen_agua_tanque = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definición en la línea <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00072">72</a> del archivo <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html">Examen Final 16 Diciembre Eprog.c</a>.</p>
+
+<p class="reference">Referenciado por <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00166">informar_por_UART_Task()</a>, <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00126">manipular_electrovalvula()</a> y <a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c_source.html#l00112">medir_nivel_agua_task()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d9edf6c004b4a7ff14fe9ae7a92214ee.html">firmware</a></li><li class="navelem"><a class="el" href="dir_429d80758da54da73083af4edd40d0b3.html">projects</a></li><li class="navelem"><a class="el" href="dir_7d87fb58a00c3a150b113c75925f3259.html">Examen Final 16 Diciembre Eprog</a></li><li class="navelem"><a class="el" href="dir_648bd62f9d1787181f1083d35691d28f.html">main</a></li><li class="navelem"><a class="el" href="_examen_01_final_0116_01_diciembre_01_eprog_8c.html">Examen Final 16 Diciembre Eprog.c</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>
